@@ -1,0 +1,25 @@
+@import "~normalize.css";
+// 1. Sentings
+@import './imports/settings.imports';
+
+// 2. Tools
+@import './imports/tools.imports';
+
+//3. Generic
+@import './imports/generic.imports';
+
+//4. Elements
+@import './imports/elements.imports';
+
+//5. Objects 
+@import './imports/objects.imports';
+
+//6. Components
+@import './imports/components.imports';
+
+//7. Trumps
+@import './imports/trumps.imports';
+body{
+    background-color: #AED6F1;
+}
+

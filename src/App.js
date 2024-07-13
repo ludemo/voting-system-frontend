@@ -1,24 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Admin from 'components/Admin/Admin';
+import Login from 'components/Admin/Login';
+import Organizacion from 'components/Admin/Organizacion';
+import Postulantes from "components/Admin/Postulantes";
+import Votantes from "components/Admin/Votantes";
+import Resultados from "components/Admin/Resultados";
+import Votacion from "components/Client/Page";
+import { AuthProvider } from 'context/AuthContext';
+import { PrivateRoutes } from 'utils/PrivateRoutes';
+import 'styles/style.scss'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <AuthProvider>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Login/>} />
+        <Route path="/votacion" element={<Votacion/>} />
+        <Route element={<PrivateRoutes />}>
+              <Route path="/admin" exact element ={<Admin/>} >
+                <Route path="organizacion" element={<Organizacion/>}/>
+                <Route path="postulantes" element={<Postulantes/>}/>
+                <Route path="votantes" element={<Votantes/>}/>
+                <Route path="resultados" element={<Resultados/>}/>
+              </Route>
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  </AuthProvider>
   );
 }
 
