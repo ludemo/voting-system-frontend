@@ -1,8 +1,8 @@
 .container{
     border : 2px solid red;
+    width: 100%;
+    margin:20px;
 }
-.gridContainer{
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    gap: 10px;
+.flexContainer{
+    display: flex;
 }

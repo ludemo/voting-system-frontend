@@ -3,7 +3,7 @@ import { Outlet } from 'react-router-dom';
 import styles from './Admin.module.scss'
 export default function Admin() {
     return (
-        <div className={styles.gridContainer}>
+        <div className={styles.flexContainer}>
             <SideBar />
             <div className={styles.container}>
                 <Outlet/>
