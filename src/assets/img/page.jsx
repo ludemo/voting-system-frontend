@@ -4,7 +4,8 @@ import graficas from './graficas.svg';
 import votantes from './votante.svg';
 import logo from './logo.png'
 import sideBar from './burguer-bar.svg'
-import arrow from './arrow.svg'
+import arrow from './arrow.svg';
+import closed from './closed.svg';
  const  admin  = {
     postulantes,
     organizacion,
@@ -13,5 +14,6 @@ import arrow from './arrow.svg'
     logo,
     sideBar,
     arrow,
+    closed,
 }
 export default admin;

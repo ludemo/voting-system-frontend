@@ -16,6 +16,16 @@
 }
 .close{
     margin:auto;
+    border:none;
+    background-color: transparent;
+    color:#ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    &:hover{
+        background-color: #354e5e;
+        border-radius: 10px;
+    }
 }
 .container{
     position: relative;
@@ -38,6 +48,9 @@
     background-color: #ffffff;
     border-radius: 50%;
     padding: 2px;
+    &:hover{
+        background-color: #354e5e;
+    }
 }
 .hiddenSideBar{
    width: 90px;

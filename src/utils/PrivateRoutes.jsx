@@ -6,6 +6,6 @@ export const PrivateRoutes = () => {
     return(
             auth.token 
                 ? <Outlet/> 
-                : <Navigate to ="/Login"/>
+                : <Navigate to ="/"/>
     );
 }

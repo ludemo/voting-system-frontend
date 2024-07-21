@@ -26,7 +26,7 @@ export default function SideBar(){
                 <li><NavLink  activeClassName to = "votantes">     <img className ={ styles["list-icon"]} src={admin.votantes} alt="" />     {open&&<p className ={styles.text}>Votantes   </p>}  </NavLink></li>
                 <li><NavLink  activeClassName to = "resultados">   <img className ={ styles["list-icon"]} src={admin.graficas} alt="" />     {open&&<p className ={styles.text}>Resultados </p>} </NavLink></li>
             </ul>
-            <button className = {styles.close} onClick={handleLogout}>Cerrar Sesión</button>
+            <button className = {styles.close} onClick={handleLogout}><img className ={ styles["list-icon"]} src={admin.closed} alt="" />  {open&&<p className ={styles.text}>Salir</p>} </button>
 
         </div>
     );
