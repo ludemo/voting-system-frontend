@@ -1,0 +1,19 @@
+.container{
+    background-color: hsla(20, 67%, 96%, 0.57);
+    border-radius: 15px;
+    padding: 20px 20px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+.title{
+    text-align: center;
+}
+.containerFormCategoria{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
