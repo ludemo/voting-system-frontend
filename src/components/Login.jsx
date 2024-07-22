@@ -10,17 +10,24 @@ export default function Login() {
     const [error, setError] = useState("");
     const navigate = useNavigate();
     const { setAuth } = useAuth();
-    const allowedEmails = ["azevallosa@unsa.edu.pe","mchurapum@unsa.edu.pe","rvelizs@unsa.edu.pe","allaiquec@unsa.edu.pe"];  // Lista de correos permitidos
+    const adminEmails = ["azevallosa@unsa.edu.pe","mchurapum@unsa.edu.pe","rvelizs@unsa.edu.pe","allaiquec@unsa.edu.pe"];
+    const clientEmails = ["sonque@unsa.edu.pe"];  
 
     const onSuccess = (credentialResponse) => {
-        const userObject = jwtDecode(credentialResponse.credential);
-        if (allowedEmails.includes(userObject.email)){
-            setAuth({ token: true, email: userObject.email ,picture : userObject.picture});
-            navigate("admin") 
-         } else {
-             setError("Usuario no permitido");
-        } 
-            
+        try {
+            const userObject = jwtDecode(credentialResponse.credential);
+            if (adminEmails.includes(userObject.email)) {
+                setAuth({ token: true, email: userObject.email, picture: userObject.picture });
+                navigate("admin/organizacion");
+            } else if (clientEmails.includes(userObject.email)) {
+                setAuth({ token: true, email: userObject.email, picture: userObject.picture });
+                navigate("votacion");
+            } else {
+                setError("Usuario no permitido");
+            }
+        } catch (error) {
+            setError("Error al decodificar el token");
+        }
     };
 
     const onFailure = () => {

@@ -1,0 +1,27 @@
+.partyList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.voteButton {
+  align-self: center;
+  background-color: #64b5f6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.voteButton:hover {
+  background-color: #42a5f5;
+}
+
+.results {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+}

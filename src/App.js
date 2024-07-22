@@ -1,11 +1,11 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Admin from 'components/Admin/Admin';
-import Login from 'components/Admin/Login';
+import Login from 'components/Login';
 import Organizacion from 'components/Admin/Organizacion';
 import ListaParticipantes from "components/Admin/Postulantes/ListaParticipantes";
 import Votantes from "components/Admin/Votantes";
 import Resultados from "components/Admin/Resultados";
-import Votacion from "components/Client/Page";
+import Votacion from "components/Client/Votacion";
 import { AuthProvider } from 'context/AuthContext';
 import { PrivateRoutes } from 'utils/PrivateRoutes';
 import 'styles/style.scss'
@@ -15,8 +15,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Login/>} />
-        <Route path="/votacion" element={<Votacion/>} />
         <Route element={<PrivateRoutes />}>
+        <Route path="/votacion" element={<Votacion/>} />
               <Route path="/admin" exact element ={<Admin/>} >
                 <Route path="organizacion" element={<Organizacion/>}/>
                 <Route path="postulantes" element={<ListaParticipantes/>}/>
