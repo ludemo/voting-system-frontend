@@ -10,7 +10,7 @@ export default function Login() {
     const [error, setError] = useState("");
     const navigate = useNavigate();
     const { setAuth } = useAuth();
-    const adminEmails = ["azevallosa@unsa.edu.pe","mchurapum@unsa.edu.pe","rvelizs@unsa.edu.pe","allaiquec@unsa.edu.pe"];
+    const adminEmails = ["whuaracha@unsa.edu.pe","azevallosa@unsa.edu.pe","mchurapum@unsa.edu.pe","rvelizs@unsa.edu.pe","allaiquec@unsa.edu.pe"];
     const clientEmails = ["sonque@unsa.edu.pe"];  
 
     const onSuccess = (credentialResponse) => {
