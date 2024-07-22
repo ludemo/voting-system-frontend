@@ -8,3 +8,58 @@
     margin: 50px auto;
     width: 80%;
 }
+.containerInput{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.containerInputImage{
+    display: flex;
+    align-items: center;
+    grid-column: span 2;
+}
+.element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.containerFormPostulante{
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Define dos columnas de igual ancho */
+    gap: 10px; /* Espacio entre los elementos */
+    background-color: hsla(0, 0%, 100%, 0.51);
+    padding: 20px 10px;
+    border-radius: 15px;
+}
+.containerPostulantes{
+    background-color: hsla(0, 0%, 100%, 0.51);
+    border-radius: 15px;
+    padding: 20px;
+}
+.postulantesRow{
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    margin:20px auto;
+}
+.logoImg{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+.img{
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+.headerRow{
+    display: grid;
+    grid-template-columns:repeat(9,1fr);
+}
+.containerButton{
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}

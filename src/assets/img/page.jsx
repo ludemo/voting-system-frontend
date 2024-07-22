@@ -6,6 +6,7 @@ import logo from './logo.png'
 import sideBar from './burguer-bar.svg'
 import arrow from './arrow.svg';
 import closed from './closed.svg';
+import eliminar from './trash.svg'
  const  admin  = {
     postulantes,
     organizacion,
@@ -15,5 +16,6 @@ import closed from './closed.svg';
     sideBar,
     arrow,
     closed,
+    eliminar,
 }
 export default admin;

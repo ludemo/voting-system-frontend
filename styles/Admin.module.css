@@ -1,0 +1,10 @@
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin: 20px;
+}
+
+.flexContainer {
+  display: flex;
+}/*# sourceMappingURL=Admin.module.css.map */

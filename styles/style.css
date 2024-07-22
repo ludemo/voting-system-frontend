@@ -1,0 +1,56 @@
+@import "~normalize.css";
+label {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.inputText {
+  border-radius: 7px;
+  border: 2px solid #9DCDED;
+  background-color: #D9ECF8;
+  color: #385162;
+  margin: 10px 15px;
+  width: 80%;
+  padding: 5px;
+}
+.inputText.Area {
+  height: 100px;
+}
+
+.inputFile {
+  margin-left: 20px;
+}
+
+.inputSubmit {
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  background-color: #85C1E9;
+  color: #ffffff;
+  height: 40px;
+  padding: 10px 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.inputSubmit:hover {
+  background-color: #5DADE2;
+}
+
+.buttonEliminar {
+  background-color: #E58C6A;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  width: 50px;
+  cursor: pointer;
+}
+.buttonEliminar:hover {
+  background-color: #e1774d;
+}
+
+body {
+  background-color: #AED6F1;
+}/*# sourceMappingURL=style.css.map */
