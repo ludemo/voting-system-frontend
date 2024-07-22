@@ -19,7 +19,7 @@ const ChartComponent = ({ categoria }) => {
   return (
     <div>
       <h2>{categoria.nombre}</h2>
-      <ResponsiveContainer width="100%" height={400}>
+      <ResponsiveContainer  width="100%" height={400}>
         <BarChart
           data={chartData}
           margin={{
@@ -34,7 +34,7 @@ const ChartComponent = ({ categoria }) => {
           <YAxis />
           <Tooltip />
           <Legend />
-          <Bar dataKey="votos" fill="#8884d8" />
+          <Bar dataKey="votos" fill="#0077B6" />
         </BarChart>
       </ResponsiveContainer>
     </div>
