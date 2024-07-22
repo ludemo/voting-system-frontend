@@ -1,0 +1,73 @@
+{
+  "categorias": [
+    {
+      "nombre": "Categoría 1",
+      "postulantes": [
+        {
+          "nombre": "Ricardo espinoza",
+          "frase": "Frase 1-1",
+          "logo": "logo1-1.png",
+          "votos": 120
+        },
+        {
+          "nombre": "Postulante 1-2",
+          "frase": "Frase 1-2",
+          "logo": "logo1-2.png",
+          "votos": 80
+        },
+        {
+          "nombre": "Postulante 1-3",
+          "frase": "Frase 1-3",
+          "logo": "logo1-3.png",
+          "votos": 45
+        }
+      ]
+    },
+    {
+      "nombre": "Categoría 2",
+      "postulantes": [
+        {
+          "nombre": "Postulante 2-1",
+          "frase": "Frase 2-1",
+          "logo": "logo2-1.png",
+          "votos": 200
+        },
+        {
+          "nombre": "Postulante 2-2",
+          "frase": "Frase 2-2",
+          "logo": "logo2-2.png",
+          "votos": 150
+        },
+        {
+          "nombre": "Postulante 2-3",
+          "frase": "Frase 2-3",
+          "logo": "logo2-3.png",
+          "votos": 75
+        }
+      ]
+    },
+    {
+      "nombre": "Categoría 3",
+      "postulantes": [
+        {
+          "nombre": "Postulante 3-1",
+          "frase": "Frase 3-1",
+          "logo": "logo3-1.png",
+          "votos": 95
+        },
+        {
+          "nombre": "Postulante 3-2",
+          "frase": "Frase 3-2",
+          "logo": "logo3-2.png",
+          "votos": 60
+        },
+        {
+          "nombre": "Postulante 3-3",
+          "frase": "Frase 3-3",
+          "logo": "logo3-3.png",
+          "votos": 130
+        }
+      ]
+    }
+  ]
+}
