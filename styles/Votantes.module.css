@@ -1,0 +1,50 @@
+.container {
+  background-color: hsla(20, 67%, 96%, 0.57);
+  border-radius: 15px;
+  padding: 20px 20px 20px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.containerFormVotantes {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Define dos columnas de igual ancho */
+  gap: 10px; /* Espacio entre los elementos */
+  background-color: hsla(0, 0%, 100%, 0.51);
+  padding: 20px 10px;
+  border-radius: 15px;
+}
+
+.containerButton {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.containerVotantes {
+  background-color: hsla(0, 0%, 100%, 0.51);
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.votantesRow {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  margin: 20px auto;
+}
+
+.element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.headerRow {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}/*# sourceMappingURL=Votantes.module.css.map */
